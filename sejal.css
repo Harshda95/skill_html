@@ -1,0 +1,41 @@
+h1{
+    font-size: 6rem;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    color: rgb(0, 149, 255);
+}
+
+#srh{
+
+    border-color: rgb(12, 8, 8);
+    width: 500px;
+    height: 40px;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    left: 13.5cm;
+    top: .5CM;
+    box-shadow: 1px 1px 6px black;
+    border-radius:1cm ;
+   
+   
+
+}
+#ser{
+    position: relative;
+    width: 20px;
+    height: 25px;
+    padding-left: 6.5cm;
+}
+#icon{
+    
+    width: 25px;
+    height: 25px;
+    padding-right: 2cm;
+}
+p{
+    font-style: unset;
+    font-weight: lighter;
+}
