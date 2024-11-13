@@ -31,6 +31,8 @@
         <br>
         <br>
         <form >
+            <fieldset>
+                <legend>Admission Form</legend>
             <label for="students photo">Student's Photo<span style="color: red;">*</span> :</label>
             <input type="file" name="students photo" > 
             <br>
@@ -55,7 +57,7 @@
             <label for="Admission type" style="color: red; margin-left: 5cm;">Admission Type<span style="color: red;">*</span> :</label>
             <input type="text" required>
             <br>
-           <h3 style="color: red;">Students Details</h3>
+           <h3  style="color: red;">Students Details</h3>
           
            <label for="name">Name<span style="color: red;">*</span> :</label>
           <input type="text" placeholder="Enter Your Name" required>
@@ -111,7 +113,7 @@
             <option value="st">ST</option>
              </select>
              <br><br>
-             <label for="blood group">Blood Group<span style="color: red;">*</span> :</label>
+             <label for="blood group" >Blood Group<span style="color: red;">*</span> :</label>
              <input type="text" required>
              <label for="allergic to" style="margin-left: 3.8cm;">Allergic To :</label>
            <input type="text">
@@ -192,8 +194,9 @@
            </table>
         </div>
         <br><br> <div style="text-align: center;">
-           <button style="border: 3px solid rgb(35, 15, 15);width: 3.5cm; height: 1cm;font-size: larger;border-radius: 1cm;background-color: rgb(139, 23, 23);">Submit</button>
+           <button onclick="alert('submit the form')" style="border: 3px solid rgb(70, 125, 156);width: 3.5cm; height: 1cm;font-size: larger;border-radius: 1cm;background-color: rgba(23, 100, 139, 0.586);">Submit</button>
         </div>
+    </fieldset>
         </form>
     </div>
 </body>
