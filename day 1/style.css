@@ -1,5 +1,5 @@
 h1{ 
-    margin-left: 16cm;
+    text-align: center;
     font-size: 6rem;
 
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
@@ -12,32 +12,43 @@ h1{
     border-color: rgb(12, 8, 8);
     width: 500px;
     height: 40px;
-    background-color:white;
-    justify-content: center;
-    align-items: center;
+    
+
     display: flex;
-    position: relative;
-    left: 13.5cm;
-    top: .5CM;
+   
+    
+    
+    
+   
     box-shadow: 1px 1px 6px black;
     border-radius:1cm ;
+    
+    
    
    
 
 }
 #ser{
-    position: fixed;
+    
     width: 20px;
     height: 25px;
-    padding-left: 12cm;
+    
+    margin-top: 1.5%;
+   
+
+    
 }
 #icon{
-    position: fixed;
+   
     width: 25px;
     height: 25px;
-    padding-right: 12cm;
+   
+    margin-top: 1.5%;
+   margin-left: .25cm;
 }
-p{ position: fixed;
+p{ 
     font-style: unset;
     font-weight: lighter;
+    margin-right: 3cm;
+    margin-left: 5.5cm;
 }

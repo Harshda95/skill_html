@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.family-member {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    height: 270px;
+    width: 270px;
+
+}
+
+.family-member:hover {
+    transform: scale(1.05);
+}
+
+.family-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.intro{
+  
+    padding-left: 50px;
+    padding-right: 50px;
+}
+footer{
+    text-align: center;
+    background-color:#35424a; 
+    color: #f4f4f4;
+}
+div {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.gp {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    height: 270px;
+    width: 270px;
+}
+.gp img{
+    height:260px ;
+    width: 270px;
+}
+nav{
+            
+            text-align: right;
+            font-size: large;
+            background-color: black;
+            padding: 15px;
+        }
+        nav a:hover{
+            background-color:#35424a ;
+            border-radius:.5cm;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Family</h1>
+    </header>
+    <nav>
+        <nav>
+            <a href="#home" style="text-decoration: none;padding: 10px; color:white;">Home</a>
+            <a href="#about us" style="text-decoration: none; padding: 10px; color: white;">About us</a>
+            <a href="#family pic" style="text-decoration: none; padding: 10px; color: white;">family-pic</a>
+            <a href="#contact" style="text-decoration: none; padding: 10px; color: white;">contact</a>
+        </nav>
+
+    </nav>
+
+     <section class="intro" id="hpme" >
+        <h2> Introducing my Family</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta molestias dolores eaque laudantium reiciendis harum doloremque aperiam, similique earum nemo asperiores maiores libero sed dolor hic modi neque temporibus pariatur.</p>
+
+     </section>
+    
+
+    <h2 class="intro">My Family Member</h2>
+
+    <main id="about us">
+        
+        <section class="family-member">
+            <h2>harshda</h2>
+            <img src="./../images/sister.png" alt="Mom" />
+            <p>This is myself. </p>
+        </section>
+        <section class="family-member">
+            <h2>Mom</h2>
+            <img src="../images/mother.png" alt="Mom" />
+            <p>This is my mom. She is the best cook and always supports me.</p>
+        </section>
+        <section class="family-member">
+            <h2>Dad</h2>
+            <img src="../images/father.png" alt="Dad" />
+            <p>This is my dad. He loves to tell stories and make us laugh.</p>
+        </section>
+        <section class="family-member">
+            <h2>Brother</h2>
+            <img src="../images/brother.png" alt="Sister" />
+            <p>This is my brother. She is my best friend and always there for me.</p>
+        </section>
+    </main>
+   <h2 class="intro">Group Picture </h2>
+    <div id="family pic">
+        <section class="gp" >
+            
+            <img src="../images/family3.png" alt="Mom" />
+           
+        </section>
+        <section class="gp">
+            
+            <img src="../images/family1.png" alt="Mom" />
+            
+        </section>
+        <section class="gp">
+            
+            <img src="../images/family2.png" alt="Mom" />
+           
+        </section>
+    </div>
+    <footer id="contact">
+        <h2>contact us</h2>
+        <details>
+            harshdagargi@gmail.com
+            <summary>Email</summary>
+        </details>
+        <details>
+        9234949618
+            <summary>mob no.</summary>
+        </details>
+    </footer>
+</body>
+</html>
