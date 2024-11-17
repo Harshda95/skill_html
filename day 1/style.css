@@ -1,54 +1,66 @@
-h1{ 
-    text-align: center;
-    font-size: 6rem;
-
+#logo{ 
+    padding: 10vh;
+    font-size: 6vw;
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
-    color: rgb(0, 149, 255);
+    height: 17vw;
+    
     
     
 }
 
 #srh{
     border-color: rgb(12, 8, 8);
-    width: 500px;
+    width: 40vw;
     height: 40px;
-    
-
     display: flex;
-   
-    
-    
-    
-   
     box-shadow: 1px 1px 6px black;
     border-radius:1cm ;
-    
-    
-   
-   
-
 }
 #ser{
     
     width: 20px;
     height: 25px;
-    
-    margin-top: 1.5%;
-   
+    padding: 10px;
 
-    
-}
+   }
 #icon{
    
     width: 25px;
     height: 25px;
+    padding: 10px;
+  } 
+  .buttons button{
+    margin-top: 5vw;
+    padding: 2vw;
+  }
+  nav {
+    word-spacing: .24vw;
+    text-align-last:right ;
+    text-decoration: none;
+    margin-left: 76vw;
    
-    margin-top: 1.5%;
-   margin-left: .25cm;
+    
+  }
+  a{
+    text-decoration: none;
+  }
+  
+
+footer{
+ margin-top: 30vh;
+ margin-left: 0;
+ margin-right: 0%;
+ word-spacing: 2vw;
+ display: inline;
+
+
+
 }
-p{ 
-    font-style: unset;
-    font-weight: lighter;
-    margin-right: 3cm;
-    margin-left: 5.5cm;
+
+footer a:hover{
+  text-decoration: underline;
 }
+
+  
+
+
