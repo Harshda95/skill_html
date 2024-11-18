@@ -13,8 +13,12 @@
     width: 40vw;
     height: 40px;
     display: flex;
-    box-shadow: 1px 1px 6px black;
+    box-shadow: 1px 2px 3px black;
     border-radius:1cm ;
+}
+#srh:hover{
+        transform: scale(1.005);
+
 }
 #ser{
     
