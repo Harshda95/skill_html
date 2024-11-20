@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog on selectors</title>
+    <link rel="stylesheet" href="./module2_css.css">
+</head>
+<body>
+    <header> <b style="font-size: 4rem;">CSS Selectors</b> <br>The Key to targating Elements in Web-Design</header>
+    <nav>
+        <a href="#Introduction ">Introduction </a>
+        <a href="#universal Selectors">universal Selectors</a>
+        <a href="#Element Selector">Element Selector</a>
+        <a href="#Class Selector">Class Selector</a>
+        <a href="#Id Selector">Id Selector</a>
+        <a href="#Grouping Selectors">Grouping Selectors</a>
+        <a href="#Chaining Selectors">Chaining Selectors</a>
+        <a href="#Nesting Selectors">Nesting Selectors</a>
+    </nav>
+    <section id="Introduction">
+        <h1>Introduction To Selectors</h1>
+        <p>CSS selectors are essential tools in web development, enabling developers to select and style specific elements within an HTML document. Understanding how to use selectors effectively can significantly enhance your ability to create visually appealing and user-friendly websites. In this blog, we’ll dive into the various types of selectors in CSS, their functionalities, and their importance in styling web pages.</p>
+   
+    
+        <details><p>Selectors point to the HTML element which we want to style. We use selectors ininternal
+            and external stylesheets. There are  5 types of selectors <br>Specificity here defines which style will be applied when same multiple styles are appliedtoan element. If the specificity is same, then the latest rule is applied. Specificity order: inline > id selector > class selector > tag selector > browser default.  </p>
+           
+            <p><b>Note:</b>: If same property is defined inside the same type of selector, then the propertywhichisdefined at the last, will be used by the browser.</p>
+           
+            <summary><b>What is CSS Selectors</b></summary>
+
+        </details>
+    </section>
+    <div class="container">
+    </article>
+    <article id="universal Selectors">
+        <h2>Universal Selectors</h2>
+        <p> The universal selector (*) selects all elements of any type. <br>
+
+            The universal selector (*) can also select all elements inside another element .
+            
+            This selector can also be namespaced when using @namespace <br>
+            
+            ns|* - selects all elements in namespace ns <br>
+            *|* - selects all elements <br>
+            |* - selects all elements without any namespace declare</p>
+            
+            <details> s <ul><li>* {
+                css declarations;
+            } - css syntex</li>
+            <li>namespace|* {
+                css declarations;
+              } - css Syntax with name space</li>
+            </ul>
+                <summary><b>syntax </b></summary>
+            </details>
+            
+    </article>
+
+
+        <article id="Element Selector">
+            <h2>Element Selector</h2>
+            <p>The element selector selects all elements with the specified element name. Thiswill
+                select all the elements in the HTML document. But most of the time we don't wantthis. So, to apply styles to only some elements we need to use some restrictions. We will look into this later in this section only</p>
+                <details>  element { css declarations; }
+                    <summary> <b>Syntax</b></summary>
+                </details>
+                <details>  <p>applying style to h1 tag like this:<pre> <code> &lt;h1&gt; Blue Color&lt;/h1&gt; </code></pre> </p>
+                            <p>and applying css like this: <br>
+                                h2 { color: blue; }
+                                </p>
+                                <p>will show on the browser like this:</p>
+                                <div style="color: blue;">Blue Color</div>
+                    <summary> <b>Example</b></summary>
+                </details>
+        </article>
+
+        <article id="Class Selector">
+            <h2>Class Selector</h2>
+            <p>The class selector selects multiple elements with a specific class attribute. Toselectelements with a specific class, write a period(.) character, followed by thenameofthe class. </p>
+            <p>To use the class selector, the class attribute is used in the element's openingtag. The value of the class attribute contains the name of the class. There canbemultiple classes added to the tag by giving a space in between</p>    
+            <details> .class-name {css declarations; }
+                    <summary> <b>Syntax</b></summary>
+                </details>
+                <details>  <p>applying style to h1 tag like this:<pre> <code>  &lt;p class="red" &gt;red Color &lt;/p&gt; <br> &lt;p class="blue" &gt;blue color &lt;/p&gt; <br> &lt;p class="red" &gt;red Color &lt;/p&gt; <br>&lt;p class="blue" &gt;blue Color &lt;/p&gt; </code></pre> 
+                 </p>
+                            <p>and applying css like this: <br>
+                                .red { color:red; } <br>
+                                .blue { color:blue; } <br>
+                                
+                                </p>
+                                <p>will show on the browser like this:</p>
+                                <div>
+                                    <p class="red" style="color: red;">red Color</p>
+                                    <p class="blue right" style="color: blue;">blue Color</p>
+                                    <p class="red" style="color: red;">red Color</p>
+                                    <p class="blue right" style="color: blue;">blue Color</p>
+
+                                </div>
+                    <summary> <b>Example</b></summary>
+                </details>
+        </article>
+        <article id="Id Selector">
+            <h2>Id Selector</h2>
+            <p>The id selector selects only one element with a specific id attribute. To select
+                element with a specific id, write a hash(#) character, followed by the nameof theid.</p>
+                <p>
+                    To use the id selector, the id attribute is used in the element's opening tag. 
+                    Thevalue of the id attribute contains the name of the id. There can only be oneidinthetag.
+                     The id is unique in a HTML page. If another element is given the sameid, thestyles would not be applied by the browser.
+                </p>
+                <details>  #Id-name {css declarations; }
+                    <summary> <b>Syntax</b></summary>
+                </details>
+                <details>  <p>applying style to h1 tag like this:<pre> <code> &lt;p id="one"&gt; This is id one!&lt;/p&gt; <br> &lt;p id="two"&gt; This is id two!&lt;/p&gt; <br>&lt;p id="three"&gt; This is id three!&lt;/p&gt; <br> &lt;p id="four"&gt;This is id four!&lt;/p&gt;
+
+                </code>
+                </pre> </p>
+                            <p>and applying css like this: <code>
+                                #one { color: blue; }  <br>
+                                #two { background-color: teal; }  <br>
+                                #three { color: green; }  <br>
+                                #four { background-color: lightgrey; }  <br>
+                                </code></p>
+                                <p>will show on the browser like this:</p>
+                                <div><p id="one" style="color: blue;">This is id one!</p>
+                                    <p id="two"  style=" background-color:teal ;">This is id two!</p>
+                                    <p id="three"  style="color: green;">This is id three!</p>
+                                    <p id="four"  style="background-color: lightgray;">This is id four!</p></div>
+                    <summary> <b>Example</b></summary>
+                </details>
+        </article>
+        <article id="Grouping Selectors">
+            <h2>Grouping Selectors</h2>
+            <p>It is most of the time that we use same css for multiple elements and we can't usetoo much classes.
+                 This would bring classes without any meaning in the scenarioandwould become difficult to manage.
+                  So, CSS provides with a grouping feature where you can apply CSS rules tomultipleelements with the
+                   use of combination of either tag, class or id.
+                 For grouping, weusecomma between the different selectors. </p>
+                <details>  <ul><li>● p, .class-name { CSS properties } - apply styles to 'para' andelementwith class as 'class-name'</li>
+                <li>#id1, #id2, span { CSS properties } - apply styles to 'span' andelements with ids as 'id1'and 'id2</li>
+                <li>.class-name, #id1, div { CSS properties } - apply styles to'div' andelements with class 'class-name' and id as 'id1</li></ul>
+                    <summary> <b>Syntax</b></summary>
+                </details>
+                
+        </article>
+        <article id="Chaining Selectors">
+            <h2>Chaining Selectors</h2>
+            <p> There are a times when we have(or want to have) same class for multipleelementsand we want to apply style/s to one/some of them. Then we can use chaining
+                selectors</p>
+                <p>To use chaining we use the combination of selectors without any space inbetweenthem.</p>
+                <details> we have a class 'header-style' applied to every heading. We can apply differentstyles to them like this: <ul><li>h1.header-style { CSS declarations }</li>
+                <li>h1.header-style { CSS declarations }</li>
+                </ul>
+                    <summary><b>Example</b></summary>
+                </details>
+                
+        </article>
+
+    </article>
+    <article id="Nesting Selectors">
+        <h2>Nesting Selectors</h2>
+        <p> There are times when we want to target elements inside a specific sectionof HTMLpage. So, instead of the using the classes we can use nesting that works likeahierarchy and is easy to understand.</p>
+            <p>To use nesting, use a space between the selectors such that the sequencerepresents a hierarchy, starting from top</p>
+            <details> These are the few examples <ul><li>.class-name span { CSS declarations } - apply styles to only those'span', which are inside the element with class 'class-name</li>
+            <li>#id1 .class-name span { CSS declarations } - apply styles toonlythose 'span', which are inside the element with class 'class-name' and'class-name' is inside the element with id 'id1</li>
+            </ul>
+                <summary><b>Example</b></summary>
+            </details>
+            
+    </article>
+
+
+       
+            
+        </div>
+        <Footer><p>&copy; 2024 CSS SElectors Blog by Harshda Gargi</p></Footer>
+    
+    
+</body>
+</html>
