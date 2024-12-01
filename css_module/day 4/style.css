@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background: #444;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 15px;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.post h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.content {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Font Styling */
+.normal-text {
+    font-style: normal;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+/* Font Families */
+.serif-text {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.sans-serif-text {
+    font-family: Arial, sans-serif;
+}
+
+.monospace-text {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Text Transformations */
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.lowercase-text {
+    text-transform: lowercase;
+}
+
+.capitalize-text {
+    text-transform: capitalize;
+}
+
+/* Advanced Effects */
+.shadow-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.highlighted-text {
+    background-color: #f4d03f;
+    padding: 0.2em;
+    border-radius: 4px;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+   
+}
+.footer{
+    text-align: center;
+}

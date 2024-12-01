@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #444;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 15px;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.post h2 {
+    color: #333;
+}
+
+.content {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Solid Background */
+.solid-bg {
+    background-color: #f4a261;
+    color: white;
+}
+
+/* Gradient Background */
+.gradient-bg {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+/* Image Background */
+.image-bg {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTasK0B0ocv5F8-TwJ94717nrc7OQ1PjwYF6w&s') no-repeat center center/cover;
+    color: rgb(21, 7, 222);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Framed Image */
+.framed-image {
+    text-align: center;
+}
+
+.framed-image img {
+    border: 5px solid #333;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}

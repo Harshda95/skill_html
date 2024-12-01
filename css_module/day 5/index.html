@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Websites Work</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>How Websites Work</h1>
+        <p>An introduction to DNS, IP Address, Server, Domain, and Website Loading</p>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>1. What is DNS?</h2>
+            <p>DNS stands for Domain Name System. It acts as the internet's phonebook, translating human-readable domain names like `www.example.com` into machine-readable IP addresses. Without DNS, users would need to remember numerical IP addresses to visit websites.</p>
+            <ul>
+                <li>When you enter a URL, the browser contacts a DNS server to fetch the corresponding IP address.</li>
+                <li>DNS resolves queries through recursive or authoritative servers.</li>
+                <li>It ensures users can access websites using familiar names instead of complex numbers.</li>
+            </ul>
+        </section>
+
+        <section class="post">
+            <h2>2. What is an IP Address?</h2>
+            <p>An IP address (Internet Protocol address) is a unique identifier assigned to each device on a network. It enables communication between computers over the internet.</p>
+            <ul>
+                <li>IPv4 uses 32-bit addresses (e.g., 192.168.1.1).</li>
+                <li>IPv6 uses 128-bit addresses for scalability and security.</li>
+                <li>IP addresses help route data packets from source to destination.</li>
+            </ul>
+        </section>
+
+        <section class="post">
+            <h2>3. What is a Server?</h2>
+            <p>A server is a powerful computer or software application that stores, processes, and delivers data to clients over a network. Servers handle user requests and provide responses.</p>
+            <ul>
+                <li>Web servers host websites and serve them to users upon request.</li>
+                <li>They use protocols like HTTP or HTTPS to handle communication.</li>
+                <li>Servers can be physical machines or virtual instances in the cloud.</li>
+            </ul>
+        </section>
+
+        <section class="post">
+            <h2>4. What is a Domain?</h2>
+            <p>A domain is a unique, human-readable name used to identify a website. Domains make it easier for users to remember website addresses instead of IPs.</p>
+            <ul>
+                <li>Domains consist of two parts: name (e.g., `example`) and extension (e.g., `.com`).</li>
+                <li>They are registered through domain registrars like GoDaddy or Namecheap.</li>
+                <li>Domains are mapped to servers via DNS.</li>
+            </ul>
+        </section>
+
+        <section class="post">
+            <h2>5. How Does a Website Load?</h2>
+            <p>Website loading involves several steps to fetch and render content in the browser.</p>
+            <ul>
+                <li>The browser sends a URL to the DNS server to resolve the domain into an IP address.</li>
+                <li>It establishes a connection with the server using the IP address.</li>
+                <li>The browser sends an HTTP/HTTPS request to fetch resources like HTML, CSS, and JavaScript files.</li>
+                <li>The server responds with the requested data, which the browser renders for the user.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 How Websites Work Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
