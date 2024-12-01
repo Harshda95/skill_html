@@ -92,9 +92,8 @@ main {
 
 .gradient-text {
     background: linear-gradient(45deg, #ff7e5f, #feb47b);
-    -webkit-background-clip: text;
-   
-}
+ }
+
 .footer{
     text-align: center;
-}
+}  
