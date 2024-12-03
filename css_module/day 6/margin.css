@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header{
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 5px;
+
+}
+nav{
+    
+    text-align: right;
+    font-size: large;
+    background-color: black;
+    padding: 15px;
+   
+}
+nav a:hover{
+    background-color:#4CAF50 ;
+    border-radius:.3cm;
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: #f4f4f4;
+    
+}
+.sec{
+   
+    width: 80%;
+   margin-left: 16%;
+   margin-right: 10%;
+    overflow: hidden;
+    align-items: center;
+}
+article {
+    width: 80%;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid black;
+
+   
+    
+}
+
+.container {
+    width: 30%;
+    margin: 0 auto; 
+    background-color: #f0f0f0;
+   
+    text-align: center;
+}
+.box {
+    width: 90px;
+    height: 30px;
+    background-color: #4CAF50;
+    margin: 10px; 
+}
+.left-margin {
+    margin-left: 50px; 
+}
+.right-margin {
+    margin-right: 50px; 
+}
+.margin-top{
+margin-top: 50px;
+}
+.margin-bottom{
+    margin-bottom: 50px;
+    padding: 10px;
+
+}
+.container2 {
+    width: 30%;
+    margin: 0 auto; 
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+.box2 {
+    width: 150px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    margin: 10px; 
+}
+.top-padding {
+    padding-top: 15px; 
+}
+.bottom-padding {
+    padding-bottom: 15px;
+}
+.left-padding {
+    padding-left: 15px;
+}
+.right-padding {
+    padding-right: 15px; 
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color:#4CAF50;
+    color: white;
+   
+    
+    width: 90%;
+    margin: auto;
+}
