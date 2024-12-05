@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding the Box Model in CSS</title>
+  <link rel="stylesheet" href="./box.css">
+</head>
+<body>
+  <header>
+    <h1>Understanding the Box Model in CSS</h1>
+    <p>A Beginner’s Guide to Effective Layout Design</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#what-is-box-model">What Is the CSS Box Model?</a></li>
+      <li><a href="#components">Components of the Box Model</a></li>
+      <li><a href="#box-sizing">Box Sizing</a></li>
+      <li><a href="#example">Practical Example</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="what-is-box-model">
+      <h2>What Is the CSS Box Model?</h2>
+      <p>The CSS Box Model defines how every HTML element is structured and spaced on a webpage. Each element is a rectangular box made up of the following layers:</p>
+      <ul>
+        <li><strong>Content:</strong> The innermost area where your text or images appear.</li>
+        <li><strong>Padding:</strong> Space between the content and the border.</li>
+        <li><strong>Border:</strong> The line that surrounds the padding.</li>
+        <li><strong>Margin:</strong> The outermost space between the element and other elements.</li>
+      </ul>
+    </section>
+
+    <section id="components">
+      <h2>Components of the Box Model</h2>
+      <div class="box-model-diagram">
+        <div class="margin-layer">
+          Margin
+          <div class="border-layer">
+            Border
+            <div class="padding-layer">
+              Padding
+              <div class="content-layer">Content</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>The diagram above illustrates the hierarchy of the box model layers.</p>
+     <pre><code> div {
+        width: 200px;
+        height: 100px;
+        padding: 10px;
+        border: 5px solid black;
+        margin: 20px;
+      }</code></pre>
+      <p>The actual space taken up by the element will be: <br> 
+    <ul>
+        <li>Content: 200px (width) x 100px (height)</li>
+        <li>Padding: 10px on all sides</li>
+        <li>Border: 5px on all sides</li>
+        <li>Margin: 20px on all sides</li>
+    </ul></p>
+    <p>Total Width = Content Width + Padding + Border + Margin <br></p>
+    <p>Total Height = Content Height + Padding + Border + Margin</p>
+      
+    </section>
+    
+    <section>
+        <h2>Detailed Properties</h2>
+        <p><b>Content Area</b> <br>
+        <ul>
+            <li>Holds the actual content of the box</li>
+            <li>The size is determined by: <br>
+                width and height (default content size depends on the element type if unspecified).</li>
+        </ul>
+        </p>
+        <p><b>Padding</b> <br>
+            <ul>
+                <li>Adds space around the content, inside the border.</li>
+                <li>Properties include: <br>
+                    padding-top<br>
+                    padding-right<br>
+                    padding-bottom<br>
+                    padding-left</li>
+
+            </ul>
+            </p>
+            <p><b>Border</b> <br>
+                <ul>
+                    <li>Surrounds the padding (or content if no padding is applied).</li>
+                    <li>border-width (e.g., 2px)</li>
+                    <li>border-style (e.g., solid, dashed, none)</li>
+                    <li>border-color (e.g., #333, red)
+                    </li>
+                    <li>border (shorthand)</li>
+                        
+    
+                </ul>
+                </p>
+                <p><b>Margin</b> <br>
+                    <ul>
+                        <li>Defines the space between the box and neighboring elements.</li>
+                        <li>Properties include <ul><li>margin-top</li>
+                         <li>margin-bottom
+                        </li>
+                        <li>margin-right</li>
+                        <li>margin-left</li>
+                        </ul></li>
+                        
+                       
+                        
+                            
+        
+                    </ul>
+                    </p>
+    </section>
+
+    <section id="box-sizing">
+      <h2>Box Sizing in CSS</h2>
+      <p>By default, an element's width and height only apply to the content, while padding, borders, and margins add extra space. You can adjust this behavior using the <code>box-sizing</code> property:</p>
+       <ol><li>
+        Content-Box (Default)
+        <ul>
+            <li>width and height include only the content area.</li>
+            <li>Padding and border are added outside.</li>
+        </ul>
+       </li>
+    <li>Border-box
+        <ul>
+            <li>width and height include content, padding, and border.</li>
+            <li>This makes layout calculations easier.</li>
+        </ul>
+    </li>
+</ol>
+      <pre><code>
+/* Default behavior */
+box-sizing: content-box;
+
+/* Includes padding and border in width and height */
+box-sizing: border-box;
+      </code></pre>
+    </section>
+
+    <section id="example">
+      <h2>Practical Example</h2>
+      <p>Here’s an example of using the CSS Box Model to style a simple card:</p>
+      <div class="card">
+        <h3>Card Title</h3>
+        <p>This is a sample card designed using the box model principles.</p>
+      </div>
+      <pre><code>
+.card {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  margin: 15px auto;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+      </code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 CSS Box Model Guide. All rights reserved by Harshda Gargi.</p>
+  </footer>
+</body>
+</html>
+
