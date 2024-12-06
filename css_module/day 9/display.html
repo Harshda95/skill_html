@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties</title>
+    <link rel="stylesheet" href="./display.css">
+</head>
+<body>
+    <header>
+        <h1>Understanding Display Propetrties</h1>
+        <p>The Key to Responsive Web Design</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#block">Block Display</a>
+        <a href="#inline">Inline Display</a>
+        <a href="#inline-block">Inline-Block Display</a>
+        <a href="#none">Display None</a>
+    </nav>
+    <section id="intro">
+        <h1 >Display</h1>
+        <p>The display property is a very important CSS <b> property for controlling layout.</b> It specifiesif/ <b>how an element is displayed.</b> Many of the elements have default display property value as inline or block (inlineandblockelements in HTML).</p>
+        <p>The display property has following values:
+            <ul>
+                <li>block</li>
+                <li>inline</li>
+                <li>inline-block</li>
+                <li>none</li>
+            </ul>
+        </p>
+    </section>
+    <section id="block">
+        <h2>Block Display</h2>
+        <p>When display: block; is used these following happens to the element:
+            <ul>
+                <li>element starts in a new line</li>
+                <li>takes up full-width of the parent element</li>
+            </ul>
+        </p>
+        <p><b>Example</b></p>
+        <p>originally the 2 spans look like this:</p>
+        <div class="ex">
+        <span>span1</span>
+        <span>span2</span></div>
+        <p>adding the block property to them like this: <br>
+            span{ display: block; } <br>
+            and it will be shown like this now:</p>
+            <div class="ex">
+            <span class="s" >span1</span>
+            <span class="s">span2</span></div>
+        
+    </section>
+    <section id="inline">
+        <h1>Inline Display</h1>
+        <p>When display: inline; is used these following happens to the element
+             <ul>
+                <li>element doesn't starts in a new line</li>
+                <li>only takes up as much width as necessary, so cannot set height andwidth</li>
+                <li>the vertical margins do not work</li>
+             </ul>
+        </p>
+        <p> <b>Example</b></p>
+        <p>originally a list looks like this:</p>
+        <div class="ex">
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </div>
+        <p>making the list inline:
+           <code> li { display: inline; }</code>
+           <br> and the list will now be shown in a single line like this(the space before thelist isbecause ul element have a default padding value):</p>
+           <div class="ex">
+            <ul >
+                <li class="a">one</li>
+                <li class="a">two</li>
+                <li class="a">three</li>
+            </ul>
+        </div>
+        </section>
+        <section id="inline-block">
+            <h1>Inline-Block Display</h1>
+            <p>display: inline-block; is a combination of the properties of the inline andblockelements. These are the advantages of inline-block:
+                 <ul>
+                    <li>height and width of the element can be set now</li>
+                    <li>vertical margins are allowed
+                    </li>
+                    <li>element can sit next to each other</li>
+                 </ul>
+            </p>
+            <p><b>Example</b></p>
+            <p>there are two empty div element: <br>and the following properties have been applied to them:</p>
+            <pre>
+                <code>.div {
+                    display: inline-block;
+                    border: 1px dashed black;
+                    width: 100px;
+                    height: 100px;
+                    background-color: lightgrey;
+                    
+                    }</code>
+            </pre>
+            <p>two divs will be displayed next to each other like this:</p>
+             <div class="div">div1</div>
+            <div class="div">div2</div>
+            <p>You can notice a space between these 2 divs. It is because inline elements haveaword-spacing in them and it is also a default in inline-block elements.</p>     
+            </section>
+            <section id="none">
+                <h1>No Display</h1>
+                <p>The display:none; property hides the elements in a browser. It actually removesthe element from the HTML page and nothing is shown in its place.</p>
+                <p>This is similar to another property - <code> visibility:hidden;. </code>The differenceis that the element is not removed from the page and still occupies the space.</p>
+            </section>
+            <footer>
+                <p>&copy; 2024 Understanding Display Propetrties. All rights reserved by Harshda Gargi.</p>
+            </footer>
+</body>
+</html> 
