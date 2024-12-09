@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: flex;
+}
+ul{
+    display: flex;
+    justify-content: center;
+  
+    font-family: 'Product Sans', sans-serif;
+    padding: 10px;
+    padding-top: 40px;
+    font-size: 83px;
+    
+}
+.child img{
+    height: 17px;
+    width: auto;
+}
+.parent{
+    display: flex;
+    justify-content: space-between;
+}
+.child a{
+    display: flex;
+    margin: 10px;
+    justify-content: flex-start;
+    text-decoration: none;
+    
+}
+.main{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.main img{
+    height: 25px;
+    padding-right: 7px;
+}
+#srh{
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    width: 600px;
+   padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1cm;
+    box-shadow: 0 0 5px 1px  rgba(0, 0, 0, 0.126);
+    box-sizing: border-box;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    
+}
+.btn button{
+    padding: 10px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border: none;
+   
+}
+.lang{
+    justify-content: center;
+}
+.lang a{
+    padding-left: 7px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    margin-top: 219px;
+}
+.div1 a{
+    padding-right: 20px;
+    text-decoration: none;
+}
+#srh:hover{
+    
+    box-shadow: 0 0 10px 1px  rgba(0, 0, 0, 0.126);
+}
+.child a:hover{
+    text-decoration: underline;
+}
+.child a img:hover{
+    background-color: rgba(170, 165, 165, 0.521);
+    border-radius: 1cm;
+}
+.btn button:hover{
+   box-shadow: 0 0 3px 1px  rgba(170, 165, 165, 0.184); ;
+}
+.lang a:hover{
+    text-decoration: underline;
+}
+.div1 a:hover{
+    text-decoration: underline;
+}
+#ind:hover{
+    text-decoration: underline;
+}
