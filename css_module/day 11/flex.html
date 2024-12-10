@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Properties</title>
+    <link rel="stylesheet" href="./flex.css">
+</head>
+<body>
+    <header>
+        <h1>Flex Properties</h1>
+    </header>
+    <nav>
+        
+            <a href="#flex">Flex</a>
+            <a href="#flex direction">Flex direction</a>
+            <a href="#flex Wrap">Flex Wrap</a>
+            <a href="#JUSTIFY CONTENT">justify-content</a>
+            <a href="#ALIGN ITEMS">Align-items</a>
+            <a href="#ALIGN CONTENT">Align-content</a>
+            <a href="#flex-flow">flex-flow</a>
+            
+    </nav>
+    <section class="sec">
+        <article id="flex">
+            <h3><b>FLEX</b></h3>
+            <div class="container">
+            <p>The Flexbox layout provides efficient way to layout, align and distribute space amongitemsin a container. This is really helpful when the size of the elements in the container is
+                unknown and/or dynamic.</p>
+                <p>
+                    Using the flex in a container, gives the <b> ability to alter its items width/height andorder aswell to best fit in the space available.</b> A flex container expands items to fill availablefreespace, or shrinks them to prevent overflow
+                </p>
+                <p>The flex is a value for the display property. It has to be provided in the container for theflexto work. Only if it is defined inside the container, flex properties will work. Flex propertiesare defined on the child elements.</p>
+                <p>To make the container to be flex, add this property in the container: <code> display: flex;<br>display: inline-flex;</code> for the inline variation.</p>
+            </article></div>
+            
+            <article id="flex direction">
+                <h3><b>FLEX DIRECTION</b></h3><div class="container">
+                <p>The flex-direction property defines in which direction the container lays out the flex-items.
+                    It may take 4 values:</p>
+                    <ul>
+                        <li>row - default</li>
+                        <li>column</li>
+                        <li>row-reverse</li>
+                        <li>column-reverse</li>
+                    </ul>
+                    <p>The flex-direction property lays out the flex-items either horizontally, vertically or reversedin both directions.</p>
+                    <p>The axis in the flex direction is called <b> main-axis</b> and perpendicular to it is called <b>cross axis</b></p>
+                    <p><b>example</b> <br>
+                    we take three container we can use like this: </p>
+                   <pre> <code> .flex-container { 
+                         display:flex;
+                         width:250px;
+                         height:250px; 
+                         background-color:lightgrey; }
+                        .flex-container div { width:70px; height:70px; }
+                        .div1 { background-color:#7ff9ae; }
+                        .div2 { background-color:#76bbfc; }
+                        .div3 { background-color:#ff7f8e; }</code></pre>
+                        <p>the layout will look like this:</p>
+                        <div class="flex-container">
+                            <div class="div1">div1</div>
+                            <div class="div2">div2</div>
+                            <div class="div3">div3</div>
+                            </div>
+                            <h4>row</h4>
+                            <p>The row value stacks the flex items horizontally, from left to right. For forward direction, add the flex-direction: row; to the flex-container class.
+                                It will not change anything as this is the default value and the layout will still lookthe same.</p>
+                             <h4>column</h4>
+                             <p>The column value stacks the flex items vertically, from top to bottom. For downward direction, add thec <code> flex-direction: column; </code>to the flex-containerclass, and the layout will look like this:</p>
+                             <div class="flex-container" style="display:flex; width:250px; height:250px; background-color:lightgrey; flex-direction: column;">
+                                <div class="div1">div1</div>
+                                <div class="div2">div2</div>
+                                <div class="div3">div3</div>
+                                </div>
+                                <h4>row-reverse</h4> 
+                                <p>The row-reverse value stacks the flex items horizontally, fromright to left. For backward direction, add the flex-direction: row-reverse; to theflex- container class, and the layout will look like this:</p>
+                                <div class="flex-container"  style="display:flex; width:250px; height:250px; background-color:rgb(211, 211, 211); flex-direction: row-reverse;">
+                                    <div class="div1">div1</div>
+                                    <div class="div2">div2</div>
+                                    <div class="div3">div3</div>
+                                    </div>
+                                    <h4>column-reverse</h4> 
+                                <p>The column-reverse value stacks the flex items vertically, frombottomtotop. For upward direction, add the flex-direction: column-reverse; totheflex- container class, and the layout will look like this:</p>
+                                <div class="flex-container"  style="display:flex; width:250px; height:250px; background-color:lightgrey; flex-direction: column-reverse;">
+                                    <div class="div1">div1</div>
+                                    <div class="div2">div2</div>
+                                    <div class="div3">div3</div>
+                                    </div>
+                                </div>     
+            </article>
+            
+            <article id="flex Wrap">
+                <h3><b>FLEX WRAP</b></h3><div class="container">
+                <p>The flex-wrap property specifies whether the flex items should wrap or not. By default, flex items try to fit into one line. This property allows you to change that andallow the items to flow into multiple lines as needed with this property</p>
+                <ul>
+                    <li>no wrap</li>
+                    <li>wrap</li>
+                    <li>wrap reverse</li>
+                    <h4>example</h4>
+                </ul>
+                    <pre>
+                        <code>
+                            .flex-container { display:flex; width:250px; height:200px; backgroundcolor:lightgrey; }
+                            .flex-container div { width:70px; height:70px; }
+                            #div1 { background-color:#7ff9ae; }
+                            #div2 { background-color:#76bbfc; }
+                            #div3 { background-color:#ff7f8e; } 
+                        </code>
+                    </pre>
+                    <div class="flex-container" style=" display:flex; width:250px; height:200px; background-color:lightgrey; ">
+                        <div class="div1">div1</div>
+                        <div class="div2">div2</div>
+                        <div class="div3">div3</div>
+                        <div class="div1">div4</div>
+                        <div class="div2">div5</div>
+                        <div class="div3">div6</div>
+                        </div>
+                        <h4> nowrap</h4>
+                        <p>The nowrap value specifies that the flex items will not wrap, i.e. it will makeall theflex-items appear in a single line, no matter how many items are present insidetheflex-container. It is a default value but you can use flex-wrap: nowrap;as well inthe flex-container class.</p>
+                        <h4>wrap</h4>
+                        <p>The wrap value specifies that the flex items will wrap if necessary, i.e. if thetotal
+                            flex items is width is larger than the width of the container, the items will arrangethemselves in the next column. The vertical spacing of the items will be automatically decided by this property. Use flex-wrap: wrap; in the flex-container class to wrap the items like this:</p>
+                            <div class="flex-container" style=" display:flex; width:250px; height:200px; background-color:lightgrey;flex-wrap: wrap; ">
+                                <div class="div1">div1</div>
+                                <div class="div2">div2</div>
+                                <div class="div3">div3</div>
+                                <div class="div1">div4</div>
+                                <div class="div2">div5</div>
+                                <div class="div3">div6</div>
+                                </div>
+                                <h4>wrap-reverse</h4>
+                        <p>The wrap value specifies that the flex items will wrap if necessary, i.e. if thetotal
+                            flex items is width is larger than the width of the container, the items will arrangethemselves in the next column. The vertical spacing of the items will be automatically decided by this property. Use flex-wrap: wrap; in the flex-container class to wrap the items like this:</p>
+                            <div class="flex-container" style=" display:flex; width:250px; height:200px; background-color:lightgrey;flex-wrap: wrap-reverse; ">
+                                <div class="div1">div1</div>
+                                <div class="div2">div2</div>
+                                <div class="div3">div3</div>
+                                <div class="div1">div4</div>
+                                <div class="div2">div5</div>
+                                <div class="div3">div6</div>
+                                </div>
+                            </div>
+            </article>
+            <article id="JUSTIFY CONTENT">
+                <h3><b>JUSTIFY CONTENT</b></h3>
+                <div class="container">
+                <p>The justify-content property is used to align the flex items along the main axis. This definesthe alignment along the main axis. This property distributes extra free space insidethelayout between the elements. The justify-content property takes on any of the values below:</p>
+                <ul>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>center</li>
+                    <li>space-between</li>
+                    <li>space-around</li>
+                    <li>space-evenly</li>
+                </ul>
+                <h4>example</h4>
+                <pre><p>we apply this css </p>
+                    <code>.flex-container { display:flex; width:350px; background-color:lightgrey; }.flex-container div { width:70px; height:70px; }
+                        .div1 { background-color:#7ff9ae; }
+                        .div2 { background-color:#76bbfc; }
+                        .div3 { background-color:#ff7f8e; }</code>
+                </pre>
+                <p>the layout will look like this:</p>
+                <div class="flex-container" style="display:flex; width:350px; background-color:lightgrey;justify-content: flex-start;">
+                    <div class="div1">div1</div>
+                    <div class="div2">div2</div>
+                    <div class="div3">div3</div>
+                    </div>
+                    <h4>flex-start</h4>
+                    <p>flex-start
+                        The flex-start value aligns the items towards the start of the main axis. This isthedefault value. Else use justify-content: flex-start; in the flex-container class.</p>
+                        <h4>flex-end</h4>
+                    <p>The flex-end value aligns the items towards the end of the main axis. Usejustifycontent: flex-end; in the flex-container class and the flex items will looklikethis:</p>
+                    <p>the layout will look like this:</p>
+                    <div class="flex-container" style="display:flex; width:350px; background-color:lightgrey;justify-content: flex-end;">
+                        <div class="div1">div1</div>
+                        <div class="div2">div2</div>
+                        <div class="div3">div3</div>
+                        </div>
+                        <h4>center</h4>
+                    <p>The center value aligns the items towards the center of the main axis. Usejustify-content: center; in the flex-container class and the flex items will look</p>
+                    <p>the layout will look like this:</p>
+                    <div class="flex-container" style="display:flex; width:350px; background-color:lightgrey;justify-content: center;">
+                        <div class="div1">div1</div>
+                        <div class="div2">div2</div>
+                        <div class="div3">div3</div>
+                        </div>
+                        <h4>space-between</h4>
+                        <p>The space-between value distributes the remaining space between the itemsevenly along the main axis. No space is provided towards the start of thefirst
+                            container and end of last container. So, there is same spacing between the items <br>Use justify-content: space-between; in the flex-container class and the flex</p>
+                        <p>the layout will look like this:</p>
+                        <div class="flex-container" style="display:flex; width:350px; background-color:lightgrey;justify-content: space-between">
+                            <div class="div1">div1</div>
+                            <div class="div2">div2</div>
+                            <div class="div3">div3</div>
+                            </div>
+                            <h4>space-around</h4>
+                        <p>The space-around value distributes the remaining space around the items evenlyalong the main axis. Visually the spaces does not seem to be equal. This is because all the flex itemshaveequal space on both sides. <br>Use justify-content: space-around; in the flex-container class and the flex</p>
+                        <p>the layout will look like this:</p>
+                        <div class="flex-container" style="display:flex; width:350px; background-color:lightgrey;justify-content: space-around;">
+                            <div class="div1">div1</div>
+                            <div class="div2">div2</div>
+                            <div class="div3">div3</div>
+                            </div>
+                            <h4>space-evenly</h4>
+                        <p>The space-evenly value distributes the remaining space between the items andedges of the container evenly along the main axis. This provides a visual look of evenly spread items inside the container. <br>Use justify-content: space-evenly; in the flex-container class and the flex</p>
+                        <p>the layout will look like this:</p>
+                        <div class="flex-container" style="display:flex; width:350px; background-color:lightgrey;justify-content:space-evenly;">
+                            <div class="div1">div1</div>
+                            <div class="div2">div2</div>
+                            <div class="div3">div3</div>
+                            </div>
+                        </div>
+                </article>
+            <article id="ALIGN ITEMS">
+                <h3><b>ALIGN ITEMS</b></h3>
+                <div class="container">
+                <p>The align-items property is used to align the flex items along the cross-axis. The cross-axisisperpendicular to the main-axis.
+                    If the main-axis is horizontal, then cross-axis is vertical. If the main-axis is vertical, thencross-axis is horizontal</p>
+                    <p>Align-items can be set to any of these values:</p>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>stretch - default</li>
+                        <li>baseline</li>
+                        
+                    </ul>
+                    <h4>example</h4>
+                    <pre>
+                        <code>
+                            .flex-container { display:flex; width:300px; height:150px; backgroundcolor:lightgrey; }
+                            .flex-container div { width:70px; min-height:70px; }
+                            .div1 { background-color:#7ff9ae; }
+                            .div2 { background-color:#76bbfc; }
+                            .div3 { background-color:#ff7f8e; } 
+                        </code>
+                    </pre>
+                    <p>the layout will look like this:</p>
+                    <div class="flex-container" style="display:flex; width:350px; background-color:lightgrey;align-items: stretch;">
+                        <div class="div1">div1</div>
+                        <div class="div2">div2</div>
+                        <div class="div3">div3</div>
+                        </div>
+                        <h4>stretch</h4>
+                        <p>The stretch value stretches the flex items to fill the container along the crossaxis. This is the default value. Else use align-items: stretch; in the flex-containerclass.</p>
+                        <h4> flex-start</h4>
+                        <p>The flex-start value aligns the items towards the start of the cross axis. Usealignitems: flex-start; in the flex-container class and the flex items will looklikethis</p>
+                        <div class="flex-container" style="display:flex; width:350px; background-color:lightgrey;align-items: start;">
+                            <div class="div1">div1</div>
+                            <div class="div2">div2</div>
+                            <div class="div3">div3</div>
+                            </div>
+                            <h4> flex-end</h4>
+                        <p>The flex-end value aligns the items towards the end of the cross axis. Usealignitems: flex-end; in the flex-container class and the flex items will look like this:</p>
+                        <div class="flex-container" style="display:flex; width:350px; background-color:lightgrey;align-items:flex-end;">
+                            <div class="div1">div1</div>
+                            <div class="div2">div2</div>
+                            <div class="div3">div3</div>
+                            </div>
+                            <h4>center</h4>
+                            <p>The center value aligns the items towards the center of the cross axis. Usealignitems: center; in the flex-container class and the flex items will look like this:</p>
+                            <div class="flex-container" style="display:flex; width:350px; background-color:lightgrey;align-items:center;">
+                                <div class="div1">div1</div>
+                                <div class="div2">div2</div>
+                                <div class="div3">div3</div>
+                                </div>
+                                <h4>baseline</h4>
+                            <p>The baseline value aligns the flex items such as the baselines of the content insidethe items. This means that the bottom base of the content inside the flex itemwill
+                                be the axis to align the items</p>
+                            <div class="flex-container" style="display:flex; width:350px; background-color:lightgrey;align-items:baseline;">
+                                <div class="div1"><h1>h1</h1></div>
+                                <div class="div2"><h2>h2</h2></div>
+                                <div class="div3"><h3>h3</h3></div>
+                                </div>
+                            </div>
+                                
+                            
+            </article>
+            <article id="ALIGN CONTENT">
+                <h3><b>ALIGN CONTENT</b></h3>
+                <div class="container">
+                <p>The align-content property is used to align the flex lines, i.e., multiple lines of flex items. This property aligns flex lines when there is extra space in the cross-axis, similar tohowjustify-content aligns individual items within the main-axis.</p>
+                <p>Align-content can be set to any of these values:</p>
+                <ul>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>center</li>
+                    <li>space-between</li>
+                    <li>space-around</li>
+                    <li>stretch</li>
+                </ul>
+                <h4>example</h4>
+                <pre><p>we apply this css </p>
+                    <code>.flex-container { display:flex; width:350px; background-color:lightgrey; }.flex-container div { width:70px; height:70px; }
+                        .div1 { background-color:#7ff9ae; }
+                        .div2 { background-color:#76bbfc; }
+                        .div3 { background-color:#ff7f8e; }</code>
+                </pre>
+                <p>the layout will look like this:</p>
+                <div class="flex-container" style="display:flex; width:270px; height:250px; flex-wrap:wrap;background-color:lightgrey; ">
+                    <div class="div1">div1</div>
+                    <div class="div2">div2</div>
+                    <div class="div3">div3</div>
+                    <div class="div1">div4</div>
+                    <div class="div2">div5</div>
+                    <div class="div3">div6</div>
+                    </div>
+                    <h4>stretch</h4>
+                    <p>The stretch value stretches the flex items present in multiple lines to fill thecontainer equally along the cross axis. This is the default value. Else use aligncontent: stretch; in the flex-container class</p>
+                    <h4>flex start</h4>
+                    <p>The flex-start value aligns the multiple lines of flex items towards the start of thecross axis. Use align-content: flex-start; in the flex-container class andthe</p>
+                    <p>the layout will look like this:</p>
+                    <div class="flex-container" style="display:flex; width:270px; height:250px; flex-wrap:wrap;background-color:lightgrey; align-content: flex-start; ">
+                        <div class="div1">div1</div>
+                        <div class="div2">div2</div>
+                        <div class="div3">div3</div>
+                        <div class="div1">div4</div>
+                        <div class="div2">div5</div>
+                        <div class="div3">div6</div>
+                        </div>    
+                    <h4>flex-end</h4>
+                    <p>The flex-end value aligns the multiple lines of flex items towards the endof thecross axis. Use align-content: flex-end; in the flex-container class and the flex</p>
+                    <p>the layout will look like this:</p>
+                    <div class="flex-container" style="display:flex; width:270px; height:250px; flex-wrap:wrap;background-color:lightgrey; align-content: flex-end; ">
+                        <div class="div1">div1</div>
+                        <div class="div2">div2</div>
+                        <div class="div3">div3</div>
+                        <div class="div1">div4</div>
+                        <div class="div2">div5</div>
+                        <div class="div3">div6</div>
+                        </div>
+                        <h4>center</h4>
+                    <p>TThe center value aligns the multiple lines of flex items towards the center of thecross axis. Use align-content: center; in the flex-container class and the flex</p>
+                    <p>the layout will look like this:</p>
+                    <div class="flex-container" style="display:flex; width:270px; height:250px; flex-wrap:wrap;background-color:lightgrey; align-content: center; ">
+                        <div class="div1">div1</div>
+                        <div class="div2">div2</div>
+                        <div class="div3">div3</div>
+                        <div class="div1">div4</div>
+                        <div class="div2">div5</div>
+                        <div class="div3">div6</div>
+                        </div>
+                        <h4>space-between</h4>
+                        <p>The space-between value distributes the remaining space between the multiplelines of flex items evenly along the cross axis. No space is provided towards thestart of the first container and end of last container. The space at top andbottomofcontainer is because of the margin of the flex items.<br>Use align-content: space-between; in the flex-container class</p>
+                        <p>the layout will look like this:</p>
+                        <div class="flex-container" style="display:flex; width:270px; height:250px; flex-wrap:wrap;background-color:lightgrey; align-content:space-between; ">
+                            <div class="div1">div1</div>
+                            <div class="div2">div2</div>
+                            <div class="div3">div3</div>
+                            <div class="div1">div4</div>
+                            <div class="div2">div5</div>
+                            <div class="div3">div6</div>
+                            </div>
+                            <h4>space-around</h4>
+                        <p>The space-around value distributes the remaining space around the multiplelinesof flex items evenly along the main axis</p>
+                        <p>the layout will look like this:</p>
+                        <div class="flex-container" style="display:flex; width:270px; height:250px; flex-wrap:wrap;background-color:lightgrey; align-content:space-around; ">
+                            <div class="div1">div1</div>
+                            <div class="div2">div2</div>
+                            <div class="div3">div3</div>
+                            <div class="div1">div4</div>
+                            <div class="div2">div5</div>
+                            <div class="div3">div6</div>
+                            </div></div>
+                         
+                </article>
+                <article id="flex-flow">
+                    <h3>flex-flow</h3>
+                    <div class="container">
+                    <p>The flex-flow property is a shorthand property to combine flex-directionandflex-wrap properties in one property</p>
+                    <pre>
+                        CSS Syntax is - <code>flex-flow: flex-direction flex-wrap | initial | inherit;</code> 
+                    </pre>
+                    <p>The meaning of the other 2 values is:
+                        <ul>
+                            <li>initial - represents flex-flow property as (row nowrap)</li>
+                            <li>inherit - inherits this property from its parent element</li>
+                        </ul>
+                    </p>
+                </div>
+                </article>
+    </section>
+    <footer><p>&copy; 2024 CSS SElectors Blog by Harshda Gargi</p></footer>
+    
+</body>
+</html>
