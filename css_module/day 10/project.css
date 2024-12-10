@@ -40,13 +40,13 @@ ul{
     padding-right: 7px;
 }
 #srh{
-    border: 1px solid rgba(0, 0, 0, 0.17);
+    border: 1px solid rgba(0, 0, 0, 0.133);
     width: 600px;
    padding: 10px;
     display: flex;
     justify-content: space-between;
     border-radius: 1cm;
-    box-shadow: 0 0 5px 1px  rgba(0, 0, 0, 0.126);
+    box-shadow: 0 0 6px 0px  rgba(0, 0, 0, 0.126);
     box-sizing: border-box;
 }
 .btn{
@@ -72,7 +72,7 @@ ul{
     justify-content: center;
 }
 footer{
-    margin-top: 219px;
+    margin-top:31.6vh;
 }
 .div1 a{
     padding-right: 20px;
@@ -80,7 +80,8 @@ footer{
 }
 #srh:hover{
     
-    box-shadow: 0 0 10px 1px  rgba(0, 0, 0, 0.126);
+    box-shadow: 0 0 10px 1px  rgba(0, 0, 0, 0.125);
+    opacity: 85%;
 }
 .child a:hover{
     text-decoration: underline;
