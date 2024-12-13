@@ -12,8 +12,8 @@ ul{
     justify-content: center;
   
     font-family: 'Product Sans', sans-serif;
-    padding: 10px;
-    padding-top: 40px;
+    padding-bottom: 10px;
+    
     font-size: 83px;
     
 }
@@ -22,14 +22,17 @@ ul{
     width: auto;
 }
 .parent{
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    
 }
 .child a{
     display: flex;
     margin: 10px;
     justify-content: flex-start;
     text-decoration: none;
+    color: black;
     
 }
 .main{
@@ -64,21 +67,26 @@ ul{
     border: none;
    
 }
-.lang{
+.lang{ 
+    display: flex;
     justify-content: center;
+     
 }
 .lang a{
     padding-left: 7px;
     text-decoration: none;
     display: flex;
     justify-content: center;
+    font-size: 13px;
+    flex-wrap: wrap;
+  
 }
-footer{
-    margin-top:31.6vh;
-}
+
+
 .div1 a{
     padding-right: 20px;
     text-decoration: none;
+    color: black;
 }
 #srh:hover{
     
@@ -103,4 +111,7 @@ footer{
 }
 #ind:hover{
     text-decoration: underline;
+}
+#ind:hover{
+    cursor: pointer;
 }
