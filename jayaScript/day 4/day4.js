@@ -1,4 +1,4 @@
-let a = prompt("Enter the no upto you want the even no.")
+let a = parseIntprompt("Enter the no upto you want the even no.")
 
 for (let index = 1; index <a; index++) {
     
@@ -14,10 +14,10 @@ for (let index = 1; index <a; index++) {
 
 let b = Math.floor(Math.random()*10 +1);
 console.log(b)
-let c=prompt("Guess the no between 1 to 10"); 
+let c=parseIntprompt("Guess the no between 1 to 10"); 
 
 while ( b!=c) {
-    c=prompt(" you enter the wronge no try again"); 
+    c=parseIntprompt(" you enter the wronge no try again"); 
     
 }
 console.log( c)

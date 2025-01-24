@@ -1,5 +1,5 @@
-let a = prompt("enter a no :")
-let b = prompt("enter another no :")
+let a = parseIntprompt("enter a no :")
+let b = parseIntprompt("enter another no :")
 
 if (a>b) {
     console.log("greatest no. is ")
@@ -16,7 +16,7 @@ else {
 
 // question 2 multiple of  9 
 
-let c=prompt("enter a no ")
+let c=parseIntprompt("enter a no ")
 if (c%9===0) {
     console.log("entered no. is multiple of 9")
 } else {
