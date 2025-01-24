@@ -22,43 +22,55 @@
             
         }
         .container{
-            width: 380px;
-            height: 200px;
+            width: 490px;
+            height: 250px;
             margin: auto;
             overflow: hidden;
             border: 1px solid black;
-           justify-items: center;
-           
-           
-           align-content: center;
-           display: block;
-           border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            
+            border-radius: 5px;
            box-shadow: 2px 2px 5px black;
-           background-color: rgb(218, 212, 212);
+           background-color: rgba(67, 40, 40, 0.374);
+          
+           box-sizing: border-box;
+           padding-left: 60px;
           
            
         }
         .container:hover{
-            transform:scale(1.1);
+            transform:scale(1.05);
         }
         a{
             text-decoration: none;
             font-size: larger;
-            color:rgb(144, 50, 160) ;
+            color:rgb(230, 92, 124) ;
+        }
+        a:hover{
+            color: brown;
+            
+        }
+        h3{
+            color: white;
         }
 
     </style>
 </head>
 <body>
     <div class="container">
-    <div style="margin-top:2vh ;">
+    <div >
         <h3>Html Course at skill darpan </h3>
         <a href="./html_module/index.html" target="_blank"> Click Here to go all Modules of html</a>
     </div>
 
-    <div style="margin-bottom:2vh ;">
+    <div>
         <h3 >CSS Course at skill darpan </h3>
         <a href="./css_module/index.html" target="_blank"> Click Here to go all Modules of CSS </a>
+    </div>
+    <div >
+        <h3 >JavaScript Course at skill darpan </h3>
+        <a href="./jayaScript/index.html" target="_blank"> Click Here to go all Modules of JavaScript </a>
     </div>
    </div>
 </body>
