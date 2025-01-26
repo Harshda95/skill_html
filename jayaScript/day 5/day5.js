@@ -1,5 +1,5 @@
 let targetNumber = Math.floor(Math.random() * 10) + 1; 
-  let flag = 1; 
+  
   let targetDiv = document.querySelector("#main");
   let i=1 
 
@@ -21,9 +21,9 @@ let targetNumber = Math.floor(Math.random() * 10) + 1;
         flag = 0;
         
       } else {
-        resultMessage.textContent = "❌ Incorrect. Try again!  ";
+        resultMessage.textContent = `❌ Incorrect ${i} times. Try again!n  `;
         resultMessage.style.color = "red";
-        
+        i++
          
       }
     
