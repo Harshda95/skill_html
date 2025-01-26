@@ -2,6 +2,7 @@
 
 let user = document.getElementById("password")
 
+
 document.getElementById("btn").addEventListener( "click", () =>{
     let password = user.value;
     let msg = document.getElementById("output")
@@ -20,12 +21,12 @@ document.getElementById("btn").addEventListener( "click", () =>{
     
  } 
  else if(!/[0-9]/.test(password)) {
-    msg.textContent="password must have atleast ome no."
+    msg.textContent="password must have atleast one no."
     msg.style.color="red"
     submitBtn.style.backgroundColor="red"
     
  }
- 
+
  
  else {
     msg.textContent="password is valid "
