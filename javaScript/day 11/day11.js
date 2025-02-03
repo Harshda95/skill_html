@@ -1,11 +1,11 @@
 alert("to add the numbers please enter 'sum' after giving all input")
 let inputarray=[];
 let user=prompt("enter the no ")
-let input=parseInt(user)
+let input=parseFloat(user)
 
 while (user!="sum") {
     inputarray.push(input) 
-    input=parseInt(user)
+    input=parseFloat(user)
     user=prompt("enter the no ")
 }
 
