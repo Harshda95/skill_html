@@ -1,30 +1,30 @@
 
 
 const student = {
-name: "Rahul",    
-age:20,
-course:"B.Tech",
-marks: { math: 85, science: 90, english: 78 }
+    name: "Rahul",
+    age: 20,
+    course: "B.Tech",
+    marks: { math: 85, science: 90, english: 78 }
 }
 
-student.city="Delhi"
-student.age="21"
-student.marks.math=95
+student.city = "Delhi"
+student.age = "21"
+student.marks.math = 95
 delete student.course
 
 console.log(student)
 
 //part 2
 
- student.getDetails= function(){
+student.getDetails = function () {
 
-    return this.name+ " is " + this.age +" years old and lives in "+ this.city
+    return this.name + " is " + this.age + " years old and lives in " + this.city
 }
 console.log(student.getDetails());
 
-student.calculateAverage = function() {
-    return (this.marks.math + this.marks.science + this.marks.english)/3
-    
+student.calculateAverage = function () {
+    return (this.marks.math + this.marks.science + this.marks.english) / 3
+
 }
 
 // part 3
@@ -32,15 +32,15 @@ console.log(student.calculateAverage());
 
 for (let key in student) {
     console.log(`${key}: ${student[key]}`);
-  }
+}
 
-  Object.entries(student).forEach(([key, value]) => {
+Object.entries(student).forEach(([key, value]) => {
     console.log(`${key}: ${value}`);
 });
 
-  //part 4
+//part 4
 // Q7
- // 6. Consider the following code:
+// 6. Consider the following code:
 
 //let obj1 = { a: 10, b: { c: 20 } };
 //let obj2 = obj1;
@@ -64,7 +64,7 @@ console.log(obj1.b.c);
 //Question 7
 //cloning
 
-let cloneObj1={...student}
+let cloneObj1 = { ...student }
 console.log(cloneObj1);
 
 let cloneObj2 = Object.assign({}, student);
@@ -73,17 +73,17 @@ console.log(cloneObj2);
 let cloneObj3 = JSON.parse(JSON.stringify(student));
 console.log(cloneObj3);
 //part 5
-  
+
 //8. Destructuring:
 
-let {name ,city}=student
+let { name, city } = student
 console.log(city);
 console.log(name);
 
 //9 merge
-let newDetails = { hobby:"Reading", age: 22 }
+let newDetails = { hobby: "Reading", age: 22 }
 
-let mergeObj={...student,...newDetails}
+let mergeObj = { ...student, ...newDetails }
 
 console.log(mergeObj)
 
@@ -94,7 +94,7 @@ function person(name, age, city) {
     this.name = name;
     this.age = age;
     this.city = city;
-    
+
 }
 
 const person1 = new person("Amit", 25, "Mumbai");
@@ -103,36 +103,36 @@ console.log(person1);
 
 //11
 
- let arrOfObj = [
+let arrOfObj = [
     { name: "harshda", age: 19, marks: 85 },
     { name: "Neha", age: 21, marks: 92 },
     { name: "shivani", age: 23, marks: 78 }
 ];
- let max=0;
- let topper=""
+let max = 0;
+let topper = ""
 for (let index = 0; index < arrOfObj.length; index++) {
-    if (arrOfObj[index].marks>max) {
-        max=arrOfObj[index].marks
-        topper=arrOfObj[index].name
-        
+    if (arrOfObj[index].marks > max) {
+        max = arrOfObj[index].marks
+        topper = arrOfObj[index].name
+
     }
-    
+
 }
 
-console.log(topper, " achived highest marks ." )
+console.log(topper, " achived highest marks .")
 
 function check(p1) {
     if (Object.keys(p1).length === 0) {
         console.log("object is empty");
 
-        
-        
+
+
     }
-    else{
+    else {
         console.log("Object is not empty");
-        
+
     }
-    
+
 }
 
 check(student)
