@@ -9,7 +9,7 @@ body {
     transition: background 0.3s;
 }
 
-/* Header */
+
 .head {
     display: flex;
     justify-content: space-between;
@@ -26,9 +26,9 @@ body {
     align-items: center;
 }
 
-/* 🌙 Dark Mode Button */
-#themeToggle {
-    background: brown;
+
+#theme {
+    background-color: #ddd;
     border: none;
     border-radius: 50%;
     padding: 10px;
@@ -37,7 +37,7 @@ body {
     transition: 0.3s;
 }
 
-#themeToggle:hover {
+#theme:hover {
     transform: rotate(180deg);
 }
 
@@ -205,4 +205,9 @@ li:hover {
 .dark-mode .head{
     background-color: #18191a;
     color:#c70039 ;
+    border-bottom: 2px solid #0f0e0e;
+}
+
+.dark-mode #theme{
+    background-color: #383434;
 }

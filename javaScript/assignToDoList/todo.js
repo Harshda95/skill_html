@@ -34,7 +34,7 @@
    
   })
 
-  document.querySelector("#themeToggle").addEventListener("click",() =>{
-     let theme =document.querySelector("body")
-     theme.classList.add("dark-mode");
-  })
+  document.querySelector("#theme").addEventListener("click", () => {
+    let theme = document.querySelector("body");
+    theme.classList.toggle("dark-mode");
+});
