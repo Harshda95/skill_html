@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./todo.css">
+</head>
+<body>
+    <header class="head">
+        <h1 >📌To-Do List</h1>
+        <nav><button id="themeToggle">🌙</button></nav>
+    </header>
+
+    <div class="content">
+
+        <h1 class="hero">Organise your work and life Finally</h1>
+
+        <p>
+            simplify life for both you and your work 
+        </p>
+
+        <button  style="background-color: rgb(243, 20, 20); border-radius: 20px; color: aliceblue; margin-bottom: 50px;">start for free</button>
+
+    </div>
+   <div style="display: flex; flex-direction: row-reverse; justify-content: space-between;">
+    <div class="calendar-container">
+        <h2 style="padding: 0%; margin: 0%;">Select a Month</h2>
+        <div class="year-grid">
+            <!-- 12 months buttons -->
+            <button class="month-btn" data-month="0">January</button>
+            
+            <button class="month-btn" data-month="1">February</button>
+            <button class="month-btn" data-month="2">March</button>
+            <button class="month-btn" data-month="3">April</button>
+            <button class="month-btn" data-month="4">May</button>
+            <button class="month-btn" data-month="5">June</button>
+            <button class="month-btn" data-month="6">July</button>
+            <button class="month-btn" data-month="7">August</button>
+            <button class="month-btn" data-month="8">September</button>
+            <button class="month-btn" data-month="9">October</button>
+            <button class="month-btn" data-month="10">November</button>
+            <button class="month-btn" data-month="11">December</button>
+        </div>
+        </div>
+    
+    <div class="container">
+        <h1> To-Do List</h1>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button id="addTaskBtn">➕</button>
+        </div>
+   
+        <h2>📂 Pending Tasks</h2>
+        <ul id="taskList"></ul>
+
+        <h2>✅ Completed Tasks</h2>
+        <ul id="compltedTask"></ul>
+    </div>
+</div>
+    <script src="./todo.js"></script>
+</body>
+</html>

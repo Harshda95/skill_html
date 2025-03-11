@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drum game</title>
+    <link rel="stylesheet" href="./day15.css">
+</head>
+
+<body>
+
+    <h1>Drum Game</h1>
+    <p>Click the corresponding key to play a sound!</p>
+    <div class="drum-container">
+        <div class="drum" data-key="65">A</div>
+        <div class="drum" data-key="83">S</div>
+        <div class="drum" data-key="68">D</div>
+        <div class="drum" data-key="70">F</div>
+        <div class="drum" data-key="71">G</div>
+        <div class="drum" data-key="72">H</div>
+        <div class="drum" data-key="74">J</div>
+        <div class="drum" data-key="75">K</div>
+        <div class="drum" data-key="76">L</div>
+    </div>
+    <audio data-key="65" src="./audio/js_module_drum-project_sounds_boom.wav"></audio>
+    <audio data-key="83" src="./audio/js_module_drum-project_sounds_clap.wav"></audio>
+    <audio data-key="68" src="./audio/js_module_drum-project_sounds_hihat.wav"></audio>
+    <audio data-key="70" src="./audio/js_module_drum-project_sounds_kick.wav"></audio>
+    <audio data-key="71" src="./audio/js_module_drum-project_sounds_openhat.wav"></audio>
+    <audio data-key="72" src="./audio/js_module_drum-project_sounds_ride.wav"></audio>
+    <audio data-key="74" src="./audio/js_module_drum-project_sounds_snare.wav"></audio>
+    <audio data-key="75" src="./audio/js_module_drum-project_sounds_tink.wav"></audio>
+    <audio data-key="76" src="./audio/js_module_drum-project_sounds_tom.wav"></audio>
+
+    <script src="./day15.js"></script>
+</body>
+
+</html>

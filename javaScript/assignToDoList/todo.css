@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: black;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s;
+}
+
+/* Header */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    color: brown;
+    border-bottom: 2px solid #ddd;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🌙 Dark Mode Button */
+#themeToggle {
+    background: brown;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#themeToggle:hover {
+    transform: rotate(180deg);
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+
+.calendar-container {
+    width: 30%;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 250px;
+    margin-right: 50px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.year-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.month-btn {
+    background: #ff5733;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.month-btn:hover {
+    background: #c70039;
+    transform: scale(1.1);
+}
+
+
+.container {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+/* Task Input */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 50%;
+  
+    color: #ff5733;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #f0f0f0;
+}
+
+/* 📝 Task Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Completed Task Style */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+    opacity: 0.7;
+}
+
+.hero{
+    font-size: 3rem; 
+    color: black;
+}
+
+/* ❌ Delete Button */
+.delete-btn {
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #c70039;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+    background: #232526;
+    color: white;
+}
+
+.dark-mode .calendar-container {
+    background: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+}
+
+.dark-mode .container {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.dark-mode .month-btn {
+    background: #c70039;
+}
+
+.dark-mode li {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .hero{
+    color: #ffffff;
+}
+.dark-mode .head{
+    background-color: #18191a;
+    color:#c70039 ;
+}

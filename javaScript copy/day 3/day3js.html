@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oparators</title>
+    <link rel="stylesheet" href="./day3js.css">
+</head>
+<body>
+  <header>
+    <h1>JavaScript Operators and Conditional Statements</h1>
+</header>
+<nav>
+    <a href="#arithmetic">Arithmetic</a>
+    <a href="#assignment">Assignment</a>
+    <a href="#comparison">Comparison</a>
+    <a href="#logical">Logical</a>
+    <a href="#if-else">Conditional statements</a>
+
+</nav>
+<main>
+    <section id="arithmetic">
+        <h2>Arithmetic Operators</h2>
+        
+        <p>An arithmetic operator takes numerical values (either literals or variables) as their operands and returns a single numerical value. The standard arithmetic operators are addition (+), subtraction (-), multiplication (*), and division (/). These operators work as they do in most other programming languages when used with floating point numbers (in particular, note that division by zero produces Infinity). </p>
+      
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+</td>
+                    <td>Addition</td>
+                    <td><code>5 + 2 = 7</code></td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Subtraction</td>
+                    <td><code>5 - 2 = 3</code></td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplication</td>
+                    <td><code>5 * 2 = 10</code></td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Division</td>
+                    <td><code>5 / 2 = 2.5</code></td>
+                </tr>
+                <tr>
+                    <td>Modulus(%)</td>
+                    <td> Binary operator. Returns the integer remainder of dividing the two operands.</td>
+                    <td><code>5 % 2 = 1</code></td>
+                </tr>
+
+                <tr>
+                  <td>increment(++)</td>
+                  <td> Unary operator. Adds one to its operand. If used as a prefix operator (++x), returns the value of its operand after adding one; if used as a postfix operator (x++), returns the value of its operand before adding one.</td>
+                  <td>If x is 3, then ++x sets x to 4 and returns 4, whereas x++ returns 3 and, only then, sets x to 4.</td>
+              </tr>
+              <tr>
+                <td>Decrement(--) </td>
+                <td>Unary operator. Subtracts one from its operand. The return value is analogous to that for the increment operator.</td>
+                <td>If x is 3, then --x sets x to 2 and returns 2, whereas x-- returns 3 and, only then, sets x to 2.</td>
+            </tr>
+            <tr>
+              <td>Exponentiation operator (**)</td>
+              <td>Calculates the base to the exponent power, that is, base^exponent</td>
+              <td>2 ** 3 returns 8.
+                10 ** -1 returns 0.1.</td>
+          </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="assignment">
+        <h2>Assignment Operators</h2>
+        <p>If an expression evaluates to an object, then the left-hand side of an assignment expression may make assignments to properties of that expression:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>=</td>
+                    <td>Assign</td>
+                    <td><code>x = 5</code></td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>Add and assign</td>
+                    <td><code>x += 5</code></td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>Subtract and assign</td>
+                    <td><code>x -= 5</code></td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>Multiply and assign</td>
+                    <td><code>x *= 5</code></td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>Divide and assign</td>
+                    <td><code>x /= 5</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="comparison">
+        <h2>Comparison Operators</h2>
+        <p>A comparison operator compares its operands and returns a logical value based on whether the comparison is true. The operands can be numerical, string, logical, or object values. Strings are compared based on standard lexicographical ordering, using Unicode values. In most cases, if the two operands are not of the same type, JavaScript attempts to convert them to an appropriate type for the comparison. This behavior generally results in comparing the operands numerically. The sole exceptions to type conversion within comparisons involve the === and !== operators, which perform strict equality and inequality comparisons. These operators do not attempt to convert the operands to compatible types before checking equality:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Equal (==)</td>
+                    <td>Returns true if the operands are equal</td>
+                    <td><code>5 == 5</code></td>
+                </tr>
+                <tr>
+                    <td>Not equal (!=)</td>
+                    <td>	Returns true if the operands are not equal.</td>
+                    <td><code>5 != 4</code></td>
+                </tr>
+                <tr>
+                    <td>Strict equal (===)</td>
+                    <td>Returns true if the operands are equal and of the same type.</td>
+                    <td><code>5 === 5</code></td>
+                </tr>
+                <tr>
+                    <td>Strict not equal (!==)</td>
+                    <td>Returns true if the operands are of the same type but not equal, or are of different type.</td>
+                    <td><code>5 !== '5'</code></td>
+                </tr>
+                <tr>
+                    <td>&gt;</td>
+                    <td>Greater than</td>
+                    <td><code>5 > 3</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;</td>
+                    <td>Less than</td>
+                    <td><code>3 &lt 5</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="logical">
+        <h2>Logical Operators</h2>
+        <p>Logical operators are typically used with Boolean (logical) values; when they are, they return a Boolean value. However, the &&, ||, and ?? operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they may return a non-Boolean value. As such, they are more adequately called "value selection operators"</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Logical AND &&</td>
+                    <td>Returns expr1 if it can be converted to false; otherwise, returns expr2. Thus, when used with Boolean values, && returns true if both operands are true; otherwise, returns false.</td>
+                    <td><code>(x > 5 && y &lt  10)</code></td>
+                </tr>
+                <tr>
+                    <td>Logical OR ||</td>
+                    <td>Returns expr1 if it can be converted to true; otherwise, returns expr2. Thus, when used with Boolean values, || returns true if either operand is true; if both are false, returns false.</td>
+                    <td><code>(x > 5 || y &lt 10)</code></td>
+                </tr>
+                <tr>
+                    <td>Logical NOT!</td>
+                    <td>	Returns false if its single operand can be converted to true; otherwise, returns true.</td>
+                    <td><code>!(x > 5)</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="if-else">
+      <h2>Conditional statements</h2>
+      <p>Conditional statements are used to perform different actions based on different conditions.</p>
+      <p>Use if to specify a block of code to be executed, if a specified condition is true <br>
+        Use else to specify a block of code to be executed, if the same condition is false <br>
+        Use else if to specify a new condition to test, if the first condition is false</p>
+      <pre style="display: flex;justify-content: center;">
+        
+<code style="display: flex; justify-content: center;padding: 30px; background-color: whitesmoke;width: 400px;">if (condition) {
+// block of code if condition is true
+} else {
+// block of code if condition is false
+}</code>
+      </pre>
+      <div style="display: flex; flex-direction: column;align-items: center;">
+      <p>Example:</p>
+      <pre>
+<code>let hour = 10;
+if (hour &gt; 12) {
+console.log("Good Morning!");
+} else {
+console.log("Good Afternoon!");
+}</code>
+      </pre></div>
+  </section>
+</main>
+<footer>
+    <p>&copy; 2025 JavaScript Operators Reference</p>
+</footer>
+
+
+
+   
+<script src="./day3.js"></script>
+</body>
+</html>
