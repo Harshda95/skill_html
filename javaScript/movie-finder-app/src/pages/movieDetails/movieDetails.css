@@ -1,0 +1,75 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+.details-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #1c1c1c;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.details-card img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h2 {
+  margin-bottom: 10px;
+}
+
+#wishlistBtn {
+    background-color: #ff4b5c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 75, 92, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  #wishlistBtn:hover {
+    background-color: white;
+    color: #ff4b5c;
+    transform: scale(1.05);
+  }
+  
+#favBtn {
+    background-color: #1f1f1f;
+    color: #ffd700;
+    font-weight: bold;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  #favBtn:hover {
+    background-color: #ffd700;
+    color: #1f1f1f;
+    transform: scale(1.05);
+  }
+  .btn-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+  

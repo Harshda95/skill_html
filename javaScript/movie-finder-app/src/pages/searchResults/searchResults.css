@@ -1,0 +1,89 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #0e0e0e;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Loader style */
+  .loader {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ffffffcc;
+  }
+  
+  /* Movie results container */
+  .result-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  /* Individual movie card */
+  .movie-card {
+    background-color: #1c1c1c;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    background-color: #eee;
+  }
+  
+  
+  .movie-card h3 {
+    font-size: 1.1rem;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .movie-card p {
+    font-size: 0.9rem;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #aaaaaa;
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    .movie-card {
+      width: 90%;
+    }
+  }
+  
+  

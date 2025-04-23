@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MovieMainia</title>
+  <link rel="stylesheet" href="./home.css" />
+</head>
+<body>
+  <header class="head">
+    <div id="name">MovieMainia</div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav" id="navMenu">
+      <a href="./home.html">Home</a>
+      <a href="./../wishlist/wishlist.html">Wishlist</a>
+      <a href="./../favorites/favorites.html">Favorites</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search the movie name" autocomplete="off" />
+      
+      <button id="searchBtn">Search</button>
+     
+     <ulclass="autocomplete-box" id="autocompleteBox"></ul>
+    </div>
+   
+    
+    <div id="genreContainer" class="genre-container"></div>
+
+
+    
+  </main>
+
+  <script src="./home.js"></script>
+</body>
+</html>

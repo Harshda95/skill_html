@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>whether app</title>
     <link rel="stylesheet" href="./whether.css">
+    
 </head>
 <body>
-    <h2>Weather App 🌤️</h2>
-    <input type="text" id="city" placeholder="Enter city name" id="input">
-    <button onclick="weather()">Get Weather</button>
+    <div class="container">
+        <header>
+            <h1>Wether forcast</h1>
 
-    <div id="weather"></div>
+            <nav><a href="">login</a></nav>
+
+           
+           
+        </header>
+        <div style="width: 100%; display: flex;align-items: center;justify-content: center;">
+         <p>"A beautifully crafted weather experience just for you!"</p></div>
+        <main>
+            <section class="search">
+                <input type="text" id="userinput" placeholder="Enter city name...">
+                <button onclick="weather()">Search</button>
+                <p id="errorMessage" class="error-message"></p>
+            </section>
+            
+            <section class="weather" id="weather">
+                <!-- Weather info will be inserted here -->
+            </section>
+        </main>
+    </div>
 <script src="./whether.js"></script>
 </body>
 </html>
